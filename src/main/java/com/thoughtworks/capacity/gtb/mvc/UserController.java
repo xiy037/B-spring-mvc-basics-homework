@@ -1,5 +1,7 @@
 package com.thoughtworks.capacity.gtb.mvc;
 
+import com.thoughtworks.capacity.gtb.mvc.models.User;
+import com.thoughtworks.capacity.gtb.mvc.models.UserRequestDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

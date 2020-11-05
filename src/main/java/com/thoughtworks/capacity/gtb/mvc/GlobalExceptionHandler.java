@@ -1,5 +1,8 @@
 package com.thoughtworks.capacity.gtb.mvc;
 
+import com.thoughtworks.capacity.gtb.mvc.exceptions.UserExistedException;
+import com.thoughtworks.capacity.gtb.mvc.exceptions.UserNotFoundException;
+import com.thoughtworks.capacity.gtb.mvc.exceptions.WrongFormatException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

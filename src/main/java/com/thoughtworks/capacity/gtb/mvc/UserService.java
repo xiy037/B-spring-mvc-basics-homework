@@ -1,5 +1,10 @@
 package com.thoughtworks.capacity.gtb.mvc;
 
+import com.thoughtworks.capacity.gtb.mvc.exceptions.UserExistedException;
+import com.thoughtworks.capacity.gtb.mvc.exceptions.UserNotFoundException;
+import com.thoughtworks.capacity.gtb.mvc.exceptions.WrongFormatException;
+import com.thoughtworks.capacity.gtb.mvc.models.User;
+import com.thoughtworks.capacity.gtb.mvc.models.UserRequestDto;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

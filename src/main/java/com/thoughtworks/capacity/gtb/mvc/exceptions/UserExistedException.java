@@ -1,4 +1,4 @@
-package com.thoughtworks.capacity.gtb.mvc;
+package com.thoughtworks.capacity.gtb.mvc.exceptions;
 
 public class UserExistedException extends RuntimeException {
     public UserExistedException(String message) {
