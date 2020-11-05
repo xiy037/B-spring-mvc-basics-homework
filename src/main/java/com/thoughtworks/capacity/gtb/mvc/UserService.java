@@ -14,7 +14,7 @@ public class UserService {
         userMap.put("Tom", new User(1, "Tom", "123456", "tom@qq.com"));
     }
 
-    public void register(UserRequest user) {
+    public void register(UserRequestDto user) {
         if (checkUserIfExisted(user.getUsername())) {
             throw new UserExistedException("用户已存在");
         }

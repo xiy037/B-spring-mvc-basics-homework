@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 public class UserController {
 
@@ -19,7 +21,7 @@ public class UserController {
 
     @PostMapping(value="/register")
     @ResponseStatus(HttpStatus.CREATED)
-    public void registerUser(@RequestBody UserRequest user) {
+    public void registerUser(@RequestBody @Valid UserRequestDto user) {
         userService.register(user);
     }
 
