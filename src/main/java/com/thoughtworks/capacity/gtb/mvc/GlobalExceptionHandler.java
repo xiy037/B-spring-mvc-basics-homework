@@ -24,4 +24,9 @@ public class GlobalExceptionHandler {
         String message = ex.getBindingResult().getFieldError().getDefaultMessage();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(message);
     }
+
+    @ExceptionHandler(WrongFormatException.class)
+    public ResponseEntity<String> handle(WrongFormatException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+    }
 }
